@@ -4,11 +4,10 @@ int main ()
     int i,n,k;
     printf("enter the value of n: ");
     scanf("%d",&n);
-    k=n+n;
-    for(i=1;i<=k;i++)
+    for(i=1;i<=n;i++)
     {
-        if(i%2!=0)
-        printf("%d\n",i);
+        
+        printf("%d\n",2*i-1);
     }
     printf("\n");
     return 0;

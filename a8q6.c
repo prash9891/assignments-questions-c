@@ -1,15 +1,17 @@
 #include<stdio.h>
 int main ()
 {
-    int i,n,k;
+    int i=1,n;
     printf("enter the value of n: ");
     scanf("%d",&n);
-    k=n+n;
-    for(i=1;i<=k;i++)
+    while (i<=n)
     {
-        if(i%2==0)
-        printf("%d\n",i);
+        printf("%d ",2*i);
+        i++;
     }
+    
+    
+    
     printf("\n");
     return 0;
 }

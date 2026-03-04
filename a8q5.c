@@ -1,15 +1,16 @@
 #include<stdio.h>
 int main ()
 {
-    int i,n,k;
+    int n;
     printf("enter the value of n: ");
     scanf("%d",&n);
-    k=n+n;
-    for(i=k;i>=1;i--)
+    
+    while (n)
     {
-        if(i%2!=0)
-        printf("%d\n",i);
+       printf("%d ",n*2-1);
+       n--;
     }
+    
     printf("\n");
     return 0;
 }
