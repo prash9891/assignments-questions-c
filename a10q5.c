@@ -1,22 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int i,a,b,n,HCF;
-    printf("Enter two numbers");
+    int i,a,b,h;
+    printf("Enter two numbers\n");
     scanf("%d%d",&a,&b);
-    for(i=1;a>1||b>1;)
-    {if(a%i==0)
-    HCF=1;
-    if(b%i==0)
-    HCF=1;
-    if(HCF==1)
+    for(h=a<b?a:b;h>=1;h--)
     {
-        n=i;  
-        HCF=0;
+        if(a%h==0&&b%h==0)
+        break;
     }
-    else
-    i++;
-}
-printf("HCF is %d",n);
-return 0;
+    printf(h==1?"co prime":"not co prime");
+
+    return 0;
 }
